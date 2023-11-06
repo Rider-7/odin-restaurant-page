@@ -1,1 +1,3 @@
-console.log('Build Succesful!');
+import { displayLandingPage } from "./landing";
+
+displayLandingPage();
