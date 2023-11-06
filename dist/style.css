@@ -8,7 +8,7 @@ body {
     flex-direction: column;
 }
 
-header {
+.nav-div {
     display: flex;
     justify-content: space-between;
 
@@ -20,7 +20,7 @@ ul {
     gap: 16px;
 }
 
-.hero-div {
+header {
     box-sizing: border-box;
     padding: 16px;
     padding-left: 32px;
@@ -47,6 +47,10 @@ ul {
     background-color: #345E71;
 }
 
-.landing-paragraph {
-    /* width: max(300px, 70%); */
+footer {
+    background-color: #345E71;
+    color: #FFFCEF;
+    text-align: center;
+    padding-block: 8px;
 }
+
