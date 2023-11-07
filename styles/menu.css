@@ -1,54 +1,11 @@
-
-body {
-    margin: 0;
-    min-height: 100vh;
-}
-
-#content {
-    display: flex;
-    flex-direction: column;
-}
-
-.nav-div {
-    display: flex;
-    justify-content: space-between;
-
-}
-
-ul {
-    list-style-type: none;
-    display: flex;
-    gap: 16px;
-}
-
-header {
-    box-sizing: border-box;
-    padding: 16px;
-    padding-left: 32px;
-
-    background-color: #345E71;
-    color: #FFFCEF;
-}
-
-.hero-subtitle {
-    width: max(300px, 60%);
-}
-
-footer {
-    background-color: #345E71;
-    color: #FFFCEF;
+.menu-slot {
     text-align: center;
-    padding-block: 8px;
 }
 
 .menu-slot-img {
     width: 350px;
     height: 220px;
     background-color: #345E71;
-}
-
-.menu-slot {
-    text-align: center;
 }
 
 .menu-slot-title {
