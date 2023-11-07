@@ -1,12 +1,12 @@
-import { getLandingTemplate } from "./landing";
-import { getMenuTemplate } from "./menu";
+import { getHomeTemplate } from "./pages/home";
+import { getMenuTemplate } from "./pages/menu";
 
 // ISSUE: Entire page gets replaced everytime, which then requires the navigation event listener to be recreated everytime
 //        for navigation to work.
 
 (function initialise () {
     const content = document.getElementById('content');
-    content.replaceChildren(getLandingTemplate().cloneNode(true));
+    content.replaceChildren(getHomeTemplate().cloneNode(true));
 
     const nav = document.querySelector('nav');
     nav.addEventListener('click', navigationDelegator);
@@ -14,8 +14,8 @@ import { getMenuTemplate } from "./menu";
 
 function navigationDelegator (e) {
 
-    function main () {
-        content.replaceChildren(getLandingTemplate().cloneNode(true));
+    function home () {
+        content.replaceChildren(getHomeTemplate().cloneNode(true));
     }
 
     function menu () {
@@ -26,8 +26,8 @@ function navigationDelegator (e) {
     const content = document.getElementById('content');
 
     switch (e.target.textContent) {
-        case 'MAIN':
-            main();
+        case 'HOME':
+            home();
             break;
         case 'MENU':
             menu();

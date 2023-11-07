@@ -20,7 +20,7 @@ function header (title, subtitle) {
         const ul = (function ul () {
 
             const ul = document.createElement('ul');
-            const tabNames = ['MAIN', 'MENU', 'CONTACTS'];
+            const tabNames = ['HOME', 'MENU', 'CONTACTS'];
 
             tabNames.forEach(name => {
     

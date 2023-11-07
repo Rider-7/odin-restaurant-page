@@ -1,4 +1,4 @@
-import { getTemplate } from './template.js';
+import { getTemplate } from '../templates/page-template.js';
 
 function menuSlot (foodName) {
 
