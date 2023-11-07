@@ -6,20 +6,11 @@ body {
 #content {
     display: flex;
     flex-direction: column;
-}
-
-.nav-div {
-    display: flex;
+    height: 100vh;
     justify-content: space-between;
-
 }
 
-ul {
-    list-style-type: none;
-    display: flex;
-    gap: 16px;
-}
-
+/* --- Header --- */
 header {
     box-sizing: border-box;
     padding: 16px;
@@ -29,24 +20,32 @@ header {
     color: #FFFCEF;
 }
 
+.nav-div {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+nav > ul {
+    list-style-type: none;
+    display: flex;
+    gap: 16px;
+}
+
+nav > ul > li {
+    cursor: pointer;
+}
+
 .hero-subtitle {
     width: max(300px, 60%);
 }
 
-.landing-slot {
-    display: flex;
-    justify-content: center;
-    gap: 32px;
-    margin-block: 32px;
-    margin-inline: 128px;
+/* --- Main --- */
+.main {
+    flex-grow: 1;
 }
 
-.landing-img {
-    width: 350px;
-    height: 220px;
-    background-color: #345E71;
-}
-
+/* --- Footer --- */
 footer {
     background-color: #345E71;
     color: #FFFCEF;
