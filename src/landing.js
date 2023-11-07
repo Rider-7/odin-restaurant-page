@@ -1,22 +1,5 @@
 import { getTemplate } from './template.js';
 
-const heroTitle = 'TITLE';
-const heroSubtitle = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In cursus vel ex non laoreet. Quisque tempus volutpat maximus.';
-
-// TODO: Temporary content for landing page. Remove later.
-const landingContent = (() => {
-
-    const landingContent = new DocumentFragment();
-    const headerText = 'Header';
-    const paragraphText = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In cursus vel ex non laoreet. Quisque tempus volutpat maximus.';
-    for (let i = 0; i < 3; i++) {
-        const _landingSlot = landingSlot(headerText, paragraphText);
-        landingContent.appendChild(_landingSlot);
-    }
-    return landingContent;
-
-})();
-
 function landingSlot (headerText, paragraphText) {
 
     const landingSlot = document.createElement('div');
@@ -58,6 +41,23 @@ export function displayLandingPage() {
     content.appendChild(landingTemplate.cloneNode(true));
 
 }
+
+// TODO: Temporary content for landing page. Remove later.
+const heroTitle = 'TITLE';
+const heroSubtitle = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In cursus vel ex non laoreet. Quisque tempus volutpat maximus.';
+
+const landingContent = (() => {
+
+    const landingContent = new DocumentFragment();
+    const headerText = 'Header';
+    const paragraphText = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In cursus vel ex non laoreet. Quisque tempus volutpat maximus.';
+    for (let i = 0; i < 3; i++) {
+        const _landingSlot = landingSlot(headerText, paragraphText);
+        landingContent.appendChild(_landingSlot);
+    }
+    return landingContent;
+
+})();
 
 
 
