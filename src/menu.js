@@ -18,16 +18,13 @@ function menuSlot (foodName) {
 
 }
 
-export function displayMenuPage() {
+export function getMenuTemplate() {
 
     const menu = document.createElement('div');
     menu.classList.add('menu');
     menu.appendChild(menuContent.cloneNode(true));
 
-    const menuTemplate =  getTemplate(heroTitle, heroSubtitle, menu); // TODO: Remove temporary content later.
-
-    const content = document.getElementById('content');
-    content.appendChild(menuTemplate.cloneNode(true));
+    return  getTemplate(heroTitle, heroSubtitle, menu); // TODO: Remove temporary content later.
 
 }
 

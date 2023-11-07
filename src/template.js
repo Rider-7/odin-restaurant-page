@@ -18,12 +18,17 @@ function header (title, subtitle) {
         navDiv.appendChild(nav);
     
         const ul = (function ul () {
+
             const ul = document.createElement('ul');
-            const tabNames = ['MAIN MENU', 'MENU', 'CONTACTS'];
+            const tabNames = ['MAIN', 'MENU', 'CONTACTS'];
+
             tabNames.forEach(name => {
-                let li = document.createElement('li');
+    
+                const li = document.createElement('li');
                 li.textContent = name;
+
                 ul.appendChild(li);
+
             })
 
             return ul
@@ -59,6 +64,7 @@ function header (title, subtitle) {
 }
 
 function main (content) {
+    
     const main = document.createElement('div');
     main.classList.add('main');
     main.replaceChildren(content);

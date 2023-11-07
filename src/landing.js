@@ -33,12 +33,9 @@ function landingSlot (headerText, paragraphText) {
 
 }
 
-export function displayLandingPage() {
+export function getLandingTemplate() {
 
-    const landingTemplate =  getTemplate(heroTitle, heroSubtitle, landingContent.cloneNode(true)); // TODO: Remove temporary content later.
-
-    const content = document.getElementById('content');
-    content.appendChild(landingTemplate.cloneNode(true));
+    return  getTemplate(heroTitle, heroSubtitle, landingContent.cloneNode(true)); // TODO: Remove temporary content later.
 
 }
 
