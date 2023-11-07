@@ -1,4 +1,4 @@
-.landing-slot {
+.content-slot {
     display: flex;
     justify-content: center;
     gap: 32px;
@@ -6,7 +6,7 @@
     margin-inline: 128px;
 }
 
-.landing-img {
+.content-img {
     width: 350px;
     height: 220px;
     background-color: #345E71;
