@@ -1,5 +1,7 @@
 import { getTemplate } from '../templates/page-template.js';
 
+import '../styles/menu.css';
+
 function menuSlot (foodName) {
 
     const menuSlot = document.createElement('div');

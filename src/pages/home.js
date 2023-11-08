@@ -1,6 +1,7 @@
 import { getTemplate } from '../templates/page-template.js';
 import { contentSlot } from '../templates/components.js';
 
+import '../styles/content-slot.css';
 
 export function getHomeTemplate() {
 

@@ -2,6 +2,9 @@ import { getHomeTemplate } from "./pages/home";
 import { getMenuTemplate } from "./pages/menu";
 import { getContactTemplate } from "./pages/contact";
 
+// import './styles/reset.css';
+import './styles/index.css';
+
 // ISSUE: Entire page gets replaced everytime, which then requires the navigation event listener to be recreated everytime
 //        for navigation to work.
 
